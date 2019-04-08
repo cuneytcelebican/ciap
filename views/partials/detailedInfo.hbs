@@ -1,0 +1,63 @@
+{{!-- Detailed info starts --}}
+<div class="form-box" id="passwordEmail" style="display:block;">
+    <div class="section-icon"><i class="fas fa-suitcase"></i></div>
+    <div class="form-title">About Your Business</div>
+    <div class="divider"></div>
+    <div class="pw-desc">
+        To apply, your incorporated venture must fulfil the following mandatory requirements
+    </div>
+    <div class="divider"></div>
+    <div class="form-wrapper">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Is your business registered in or are you willing to relocate to Southern Ontario?</label>
+                <select class="form-control" id="q1" onchange="checkNext(event)">
+                    <option selected disabled>Choose one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Do you have a female entrepreneur in a senior, decision making position?</label>
+                <select class="form-control" id="q2" disabled  onchange="checkNext(event)">
+                    <option selected disabled>Choose one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Do you have a legally registered corporation?</label>
+                <select class="form-control" id="q3" disabled  onchange="checkNext(event)">
+                    <option selected disabled>Choose one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Include your corporation number/name</label>
+                <input type="email" class="form-control" id="q4" disabled aria-describedby="emailHelp"  onkeydown="checkNext(event)">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Do you have Annual revenues of less than C$500,000?</label>
+                <select class="form-control" id="q5" disabled  onchange="checkNext(event)">
+                    <option selected disabled>Choose one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Do you have a public facing website?</label>
+                <select class="form-control" id="q6" disabled  onchange="checkNext(event)">
+                    <option selected disabled>Choose one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="divider"></div>
+    <div class="form-button-wrapper">
+        <button type="button" id="business-next-button" disabled class="btn btn-info btn-block" onclick="nextPage('passwordEmail', 'passwordBank')">Next <i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+{{!-- Detailed info ends --}}
